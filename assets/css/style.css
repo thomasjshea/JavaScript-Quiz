@@ -1,0 +1,30 @@
+body {
+    font-family:'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.question {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.splash-page {
+    text-align: center;
+}
+
+.splash-page h1 {
+    text-align: center;
+}
+
+.answers {
+    list-style: none;
+}
