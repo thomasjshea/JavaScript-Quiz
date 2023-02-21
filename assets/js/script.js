@@ -4,18 +4,43 @@ var questionContainerEl = document.getElementById('question-container');
 var questionEl = document.getElementById('question');
 var answerGridEl = document.getElementById('answer-buttons');
 var answerButtonEl = document.querySelector('.answer-button');
-var endScreenEl = document.querySelector('.end-screen')
+var endScreenEl = document.querySelector('.end-screen');
+var timerEl = document.querySelector('.timer');
 
 var currentQuestionIndex
-
+var timeLeft
+// Adds event listener to start button to call function startQuiz
 startButtonEl.addEventListener('click', startQuiz);
 
+// startQuiz function, hides the start screen and displays the questions
 function startQuiz() {
-    console.log('Started')
     startScreenEl.classList.add('hide')
     currentQuestionIndex = 0
     questionContainerEl.classList.remove('hide');
+    // Calls countdown function to start the timer
+    countdown()
+    // calls nextQuestion function to display the next Question
     nextQuestion()
+}
+
+function countdown() {
+    // start with 75 seconds
+    timeLeft = 75;
+
+    var timeInterval = setInterval(function() {
+        if (timeLeft > 1) {
+            timerEl.textContent = "Time: " + timeLeft + " seconds";
+            timeLeft--
+        } else if (timeLeft === 1) {
+            timerEl.textContent= "Time: " + timeLeft + " second"; 
+            timeLeft--
+        } else {
+            timerEl.textContent = "Time: " + timeLeft;
+            clearInterval(timeInterval)
+            questionContainerEl.classList.add('hide');
+            endScreenEl.classList.remove('hide');
+        }
+    }, 1000)
 }
 
 function nextQuestion() {
@@ -56,6 +81,19 @@ function selectAnswer(event) {
     } else {
         questionContainerEl.classList.add('hide')
         endScreenEl.classList.remove('hide')
+    }
+
+    if (correct){
+        var correctAnswer = document.createElement('div')
+        correctAnswer.textContent = "Correct!"
+        correctAnswer.classList.add('result')
+        questionContainerEl.appendChild(correctAnswer)
+    } else {
+        var wrongAnswer = document.createElement('div')
+        wrongAnswer.textContent = "Wrong!"
+        wrongAnswer.classList.add('result')
+        questionContainerEl.appendChild(wrongAnswer)
+        timeLeft-10
     }
 
 }
