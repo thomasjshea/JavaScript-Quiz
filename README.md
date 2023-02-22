@@ -12,6 +12,8 @@ Installation is not required for this application. You will just need to load th
 
 To access the application, please type the URL into your browser or follow this link: https://thomasjshea.github.io/JavaScript-Quiz/
 
+Once you load the URL into your browser, you click the start button to begin the quiz. The timer will count down from 50 seconds. Each wrong answer will deduct 10 seconds from your time. Your score is your finishing time. If you complete all the questions in the alloted time, you are able to enter your initials and save your high score!git
+
 Screenshots:
 ![Screenshot 1](./assets/images/Screenshot%201.png)
 ![Screenshot 2](./assets/images/Screenshot-2.png)
