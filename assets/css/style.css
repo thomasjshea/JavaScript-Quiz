@@ -40,7 +40,7 @@ main {
 
 }
 
-.start-screen {
+.start-screen, .end-screen {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +68,7 @@ main {
     border-radius: 8px;
     border: 2px solid var(--orange);
     cursor: pointer;
-    transition: 0.3s ease-in;
+    transition: 0.3s ease-in-out;
 }
 
 button:hover {
@@ -87,17 +87,33 @@ button:hover {
     text-align: left;
 }
 
+.submit-button {
+    padding: 3px 20px;
+}
+
 .hide {
     display: none;
 }
 
-.result {
+.correct {
     font-size: 2.5rem;
     font-weight: 500;
     font-style: italic;
     color: var(--white);
     border-top: 5px solid var(--orange);
     background-color: var(--blue);
+    padding-top: 5px;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+.wrong {
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--blue);
+    border-top: 5px solid var(--blue);
+    background-color: var(--orange);
     padding-top: 5px;
     padding-left: 15px;
     margin-top: 5px;
