@@ -1,23 +1,28 @@
-# JavaScript-Quiz
-A quiz testing basic knowledge of Javascript
+# Javascript Quiz
 
-## User Story
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+## Description
 
-## Acceptance Criteria
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+This project is a timed quiz on the basics of JavaScript. My motivation for building this project was to help me learn some of the finer points of JavaScript. As Javascript is a very technical language, this quiz should help students with some of the basics of Javascript
 
-## Mock Up
-[alttext](assets/images/04-web-apis-homework-demo.gif)
+## Installation
+
+Installation is not required for this application. You will just need to load the URL into your browser to access the application. 
+
+## Usage
+
+To access the application, please type the URL into your browser or follow this link: https://thomasjshea.github.io/JavaScript-Quiz/
+
+Screenshots:
+![Screenshot 1](./assets/images/Screenshot%201.png)
+![Screenshot 2](./assets/images/Screenshot-2.png)
+
+## Credits
+
+I was tutored by Ramon Sanchez. He helped me to get the project off the ground
+
+I watched a very helpful Youtube video from Web Dev Simplified and used several of the strategies he used in the video.
+Link: https://www.youtube.com/watch?v=riDzcEQbX6k
+
+## License
+
+This application uses the MIT License
